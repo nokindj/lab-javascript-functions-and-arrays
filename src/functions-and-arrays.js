@@ -38,6 +38,8 @@ for (i = 0; i < array.length; i++){
 return sum 
 }
 
+// Bonus 3.1 
+
 console.log(sumNumbers([1,2,1]));
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
@@ -104,6 +106,12 @@ function uniquifyArray(array) {
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
+let doesWordExist = (array,word) => {
+  if (array.length === 0) {
+    return null;
+  }
+    return array.includes(word);
+}
 // Iteration #7: Count repetition
 const wordsCount = [
   'machine',
@@ -118,6 +126,16 @@ const wordsCount = [
   'disobedience',
   'matter'
 ];
+
+howManyTimes = (array, word)=> {
+  sumOfWords = 0;
+  for (let i=0; i< array.length; i++) {
+    if (array[i] === word) {
+      sumOfWords += 1; 
+    }
+  }
+  return sumOfWords;
+}
 
 // Iteration #8: Bonus
 
